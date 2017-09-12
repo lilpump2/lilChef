@@ -17,6 +17,7 @@ public class brandonscode {
 					sub = word.substring(counter1, counter);
 					System.out.println(sub);
 				}
+				counter++;
 			}
 		}while(sub == "");
 	}
