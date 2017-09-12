@@ -1,8 +1,11 @@
 package review;
-
+import java.util.Scanner;
 public class brandonscode {
 	public static void main(String [] args){
-		String word = "Caleb Baleb";
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter A Sentance");
+		String word = input.nextLine();
+		
 		int len = word.length();
 		char letter;
 		
