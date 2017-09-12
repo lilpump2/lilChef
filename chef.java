@@ -4,17 +4,41 @@ import java.util.Scanner;
 public class chef {
  public static void main(String [] args){
 	 Scanner input = new Scanner(System.in);
-	 System.out.println("Enter Word");
+	 System.out.println("Enter sentence");
 	 String word = input.nextLine();
 	 
 	 char letter;
 	 int len = word.length();
 	 int count = 0; 
 	 
-	 while(count < len){
-		 letter = word.charAt(count);
-		  if (count == 0) { 
-              if (letter == 'e') {
+	 int len = word.length();
+		char letter;
+		
+		int counter = 0;
+		String sub = "";
+		
+		do{
+			int counter1 = counter;
+			while(counter < len){
+				letter = word.charAt(counter);
+				if(letter == ' '){
+					sub = word.substring(counter1, counter);
+					System.out.println(sub);
+				}
+				counter++;
+			}
+		}while(sub == "");
+
+	 
+	 
+	 
+	 while(count < len)
+	 {
+	 	letter = word.charAt(count);
+		
+		 if (count == 0) 
+		 { 
+              	  if (letter == 'e') {
                   word.replaceAll("i", word);
                   count++;
                   continue;
