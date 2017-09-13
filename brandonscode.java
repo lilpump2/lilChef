@@ -14,9 +14,9 @@ public class brandonscode {
 		
 		do{
 			int counter1 = counter;
-			while(counter < len){
+			while(counter > len){
 				letter = word.charAt(counter);
-				if(letter == ' '){
+				if(letter == ' '|| counter <= len){
 					sub = word.substring(counter1, counter);
 					System.out.println(sub);
 				}
