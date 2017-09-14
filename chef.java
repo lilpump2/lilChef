@@ -1,29 +1,31 @@
-package review;
 import java.util.Scanner;
 
 public class chef {
-public static void main(String [] args){
+public static void main(String [] args)
+{
 	Scanner input = new Scanner(System.in);
 	System.out.println("Enter sentence");
 	String sentence = input.nextLine().toUpperCase();
-	 
-	char letter;
+		
 	int len = word.length();
 	int count = 0; 
 	int count1 = 0;
 	String sub = "";
-		
-		do{
-			int count1 = count;
-			while(count < len){
-				letter = word.charAt(count);
-				if(letter == ' '){
-					sub = word.substring(count1, count);
-					System.out.println(sub);
-				}
-				count++;
+	char letter;	
+	
+	do{
+		count1 = count;
+		while(count < len)
+		{
+			letter = word.charAt(count);
+			if(letter == ' ')
+			{
+				sub = word.substring(count1, count);
+				System.out.println(sub);
 			}
-		}while(sub == "");
+			count++;
+		}
+	}while(sub == "");
 
 	 
 	 
