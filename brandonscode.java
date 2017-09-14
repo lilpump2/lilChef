@@ -1,27 +1,15 @@
-package review;
-import java.util.Scanner;
-public class brandonscode {
-	public static void main(String [] args){
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter A Sentance");
-		String word = input.nextLine();
+		        String s = "The World is Full of Strangers.";
+		        s = s + " "; 
+		        int idxOfNextWord = 0;
+		        for(int i = 0; i < s.length(); i++) 
+		        {
+		            if(s.charAt(i)== ' ') 
+		            {
+		                System.out.println(s.substring(idxOfNextWord, i));
+		                idxOfNextWord = i+1;
+		            }            
+		        }
+		    }
 		
-		int len = word.length();
-		char letter;
-		
-		int counter = 0;
-		String sub = "";
-		
-		do{
-			int counter1 = counter;
-			while(counter > len){
-				letter = word.charAt(counter);
-				if(letter == ' '|| counter <= len){
-					sub = word.substring(counter1, counter);
-					System.out.println(sub);
-				}
-				counter++;
-			}
-		}while(sub == "");
-	}
-}
+	    }
+	
