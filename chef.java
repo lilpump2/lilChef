@@ -5,7 +5,7 @@ public class chef {
  public static void main(String [] args){
 	 Scanner input = new Scanner(System.in);
 	 System.out.println("Enter sentence");
-	 String word = input.nextLine();
+	 String sentence = input.nextLine().toUpperCase();
 	 
 	 char letter;
 	 int len = word.length();
